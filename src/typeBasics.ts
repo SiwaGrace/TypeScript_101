@@ -8,37 +8,37 @@ import * as readline from "readline";
 
 //********* Age Validator *********//
 
-// function ageValidator(age: number): void {
-//   switch (true) {
-//     case age > 25:
-//       alert("old enough");
-//       break;
-//     case age < 25:
-//       alert("too young");
-//       break;
-//     default:
-//       alert("your are the perfect age");
-//       break;
-//   }
-// }
-// ageValidator(23);
+function ageValidator(age: number): void {
+  switch (true) {
+    case age > 25:
+      alert("old enough");
+      break;
+    case age < 25:
+      alert("too young");
+      break;
+    default:
+      alert("your are the perfect age");
+      break;
+  }
+}
+ageValidator(23);
 
 //********* Unit Converter *********//
 // Kilometers ↔ Miles
 
-// const convertKmM = (value: number, unit: "km" | "mi"): number => {
-//   return unit === "km" ? value * 0.621371 : value * 1.60934;
-// };
-// console.log(convertKmM(10, "km"));
-// console.log(convertKmM(10, "mi"));
+const convertKmM = (value: number, unit: "km" | "mi"): number => {
+  return unit === "km" ? value * 0.621371 : value * 1.60934;
+};
+console.log(convertKmM(10, "km"));
+console.log(convertKmM(10, "mi"));
 
 // Celsius ↔ Fahrenheit
 
-// const convertCeFa = (value: number, unit: "f" | "c"): number => {
-//   return unit === "f" ? ((value - 32) * 5) / 9 : (value * 9) / 5 + 32;
-// };
-// console.log(`43 km = ${convertCeFa(20, "c")} miles`);
-// console.log(`20°C = ${convertCeFa(68, "f")}°F`);
+const convertCeFa = (value: number, unit: "f" | "c"): number => {
+  return unit === "f" ? ((value - 32) * 5) / 9 : (value * 9) / 5 + 32;
+};
+console.log(`43 km = ${convertCeFa(20, "c")} miles`);
+console.log(`20°C = ${convertCeFa(68, "f")}°F`);
 
 //****** Simple Calculator CLI *******//
 const rl = readline.createInterface({

@@ -4,47 +4,47 @@
 // ----------------------
 // **********************
 
-//****** Contact Book ******//
-// type Contact = {
-//   name: string;
-//   email: string;
-//   phone: number;
-// };
-// let contacts: Contact[] = [
-//   { name: "ama", email: "amaski@gmail.com", phone: 592477452 },
-//   { name: "kodjo", email: "kodjoski@gmail.com", phone: 592477452 },
-// ];
-// console.log(contacts[0]?.["name"]);
+// ****** Contact Book ******//
+type Contact = {
+  name: string;
+  email: string;
+  phone: number;
+};
+let contacts: Contact[] = [
+  { name: "ama", email: "amaski@gmail.com", phone: 592477452 },
+  { name: "kodjo", email: "kodjoski@gmail.com", phone: 592477452 },
+];
+console.log(contacts[0]?.["name"]);
 
-//****** Mini Inventory System ******//
-// type Item = {
-//   name: string;
-//   quantity: number;
-//   price: number;
-// };
+// ****** Mini Inventory System ******//
+type Item = {
+  name: string;
+  quantity: number;
+  price: number;
+};
 
-// let inventory: Item[] = [
-//   { name: "Apple", quantity: 50, price: 0.5 },
-//   { name: "Banana", quantity: 30, price: 0.3 },
-//   { name: "Orange", quantity: 20, price: 0.7 },
-//   { name: "Mango", quantity: 15, price: 1.2 },
-//   { name: "Pineapple", quantity: 10, price: 2 },
-// ];
+let inventory: Item[] = [
+  { name: "Apple", quantity: 50, price: 0.5 },
+  { name: "Banana", quantity: 30, price: 0.3 },
+  { name: "Orange", quantity: 20, price: 0.7 },
+  { name: "Mango", quantity: 15, price: 1.2 },
+  { name: "Pineapple", quantity: 10, price: 2 },
+];
 
-// function calculateTotalStock(qt: number, price: number): number {
-//   return qt * price;
-// }
+function calculateTotalStock(qt: number, price: number): number {
+  return qt * price;
+}
 
-// inventory.forEach((item) => {
-//   const calc = calculateTotalStock(item.quantity, item.price);
-//   console.log(`${item.name}: $${calc}`);
-// });
+inventory.forEach((item) => {
+  const calc = calculateTotalStock(item.quantity, item.price);
+  console.log(`${item.name}: $${calc}`);
+});
 
-// const totalValue = inventory.reduce((acc, item) => {
-//   return acc + calculateTotalStock(item.quantity, item.price);
-// }, 0);
+const totalValue = inventory.reduce((acc, item) => {
+  return acc + calculateTotalStock(item.quantity, item.price);
+}, 0);
 
-// console.log(`Total inventory value: $${totalValue}`);
+console.log(`Total inventory value: $${totalValue}`);
 
 //***** Movie Collection Manager *****//
 type Movie = {

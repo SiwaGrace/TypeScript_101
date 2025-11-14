@@ -1,6 +1,6 @@
 // **********************
 // ----------------------
-// Enums & Type Narrowing
+// 5 Enums & Type Narrowing
 // ----------------------
 // **********************
 
@@ -44,11 +44,11 @@ trafficLight();
 
 //***** Task Priority Manager *****//
 // Assign and filter tasks by enum priorities (Low, Medium, High).
-enum Tasks {
-  Low,
-  Medium,
-  High,
-}
+// enum Tasks {
+//   Low,
+//   Medium,
+//   High,
+// }
 
 //***** User Role Access System *****//
 // Use enums for roles (Admin, Editor, Viewer) and log permissions

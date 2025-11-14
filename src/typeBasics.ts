@@ -2,7 +2,7 @@ import * as readline from "readline";
 
 // **********************
 // ----------------------
-// Type Basics & Functions (Easiest)
+// 1-Type Basics & Functions (Easiest)
 // ----------------------
 // **********************
 

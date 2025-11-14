@@ -2,7 +2,7 @@ import * as readline from "readline";
 
 // **********************
 // ----------------------
-// Arrays, Loops & Conditionals
+// 2-Arrays, Loops & Conditionals
 // ----------------------
 // **********************
 
